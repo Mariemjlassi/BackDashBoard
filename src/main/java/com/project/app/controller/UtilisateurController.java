@@ -101,7 +101,7 @@ public class UtilisateurController {
 	        role,
 	        utilisateur.getPermissions(),
 	        utilisateur.getLastLogin(),
-	        utilisateur.getAccountLocked() // Ajoutez cette ligne
+	        utilisateur.getAccountLocked() 
 	    );
 	}
 	
@@ -284,7 +284,7 @@ public class UtilisateurController {
 
         return ResponseEntity
                 .ok()
-                .contentType(MediaType.APPLICATION_JSON) // <-- Forcer le Content-Type
+                .contentType(MediaType.APPLICATION_JSON) 
                 .body(response);
     }
     
